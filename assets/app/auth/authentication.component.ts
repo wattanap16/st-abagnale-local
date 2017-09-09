@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { AuthService } from "./auth.service";
 
 
 @Component({
@@ -8,8 +9,8 @@ import { Component } from "@angular/core";
              <nav class="col-md-8 col-md-offset-2">
                   <ul class="nav nav-tabs">
                       <li routerlinkActive="active"><a [routerLink]="['signup']">SignUp</a></li>
-                      <li routerlinkActive="active"><a [routerLink]="['signin']">SignIn</a></li>
-                      <li routerlinkActive="active"><a [routerLink]="['logout']">LogOut</a></li>
+                      <li routerlinkActive="active" *ngIf="!isLoggedIn()"><a [routerLink]="['signin']">SignIn</a></li>
+                      <li routerlinkActive="active" *ngIf="isLoggedIn()"><a [routerLink]="['logout']">LogOut</a></li>
                   </ul>
              </nav>
          </header>
@@ -19,5 +20,9 @@ import { Component } from "@angular/core";
     `
 })
 export class AuthenticationComponent {
-
+    constructor(private authService: AuthService) {}
+ 
+    isLoggedIn() {
+        return this.authService.isLoggedIn();
+    }
 }
