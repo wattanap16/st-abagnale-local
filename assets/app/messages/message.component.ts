@@ -37,4 +37,8 @@ export class MessageComponent {
             );
     }
 
+    belongsToUser() {
+        return localStorage.getItem('userId') == this.message.userId;
+    }
+
 }
