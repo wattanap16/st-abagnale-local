@@ -4,6 +4,7 @@ import { FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { HttpModule } from "@angular/http";
 
 import { AppComponent } from "./app.component";
+import { HomeComponent } from "./home/home.component";
 import { MessageComponent} from "./messages/message.component";
 import { MessageListComponent } from "./messages/message-list.component";
 import { MessageInputComponent } from "./messages/message-input.component";
@@ -23,6 +24,7 @@ import { ErrorService } from "./errors/error.service";
 @NgModule({
     declarations: [
         AppComponent,
+        HomeComponent,
         MessageComponent,
         MessageListComponent,
         MessageInputComponent,
