@@ -1,7 +1,7 @@
 <div class="col-md-8 col-md-offset-2">
     <form ngNativeValidate (ngSubmit)="onSubmit(f)" #f="ngForm">
          <div class="from-group">
-             <label for="content">Content</label>
+             <label for="content">Comment <span class="glyphicon glyphicon-comment" aria-hidden="true"></span></label>
              <input 
                   type="text" 
                   id="content" 
@@ -11,8 +11,8 @@
                   required >
          </div>
          <br>
-         <button type="button" class="btn btn-danger" (click)="onClear(f)">Clear</button>
-        <button class="btn btn-primary" type="submit" >Save</button>
+         <button type="button" class="btn btn-danger" (click)="onClear(f)"><span class="glyphicon glyphicon-remove-circle" aria-hidden="true"></span> Clear</button>
+        <button class="btn btn-primary" type="submit" ><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Save</button>
     </form>
     
 </div>

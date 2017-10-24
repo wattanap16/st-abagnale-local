@@ -8,9 +8,9 @@ import { AuthService } from "./auth.service";
          <header class="row spacing">
              <nav class="col-md-8 col-md-offset-2">
                   <ul class="nav nav-tabs">
-                      <li routerlinkActive="active"><a [routerLink]="['signup']">SignUp</a></li>
-                      <li routerlinkActive="active" *ngIf="!isLoggedIn()"><a [routerLink]="['signin']">SignIn</a></li>
-                      <li routerlinkActive="active" *ngIf="isLoggedIn()"><a [routerLink]="['logout']">LogOut</a></li>
+                      <li routerlinkActive="active"><a [routerLink]="['signup']"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> SignUp</a></li>
+                      <li routerlinkActive="active" *ngIf="!isLoggedIn()"><a [routerLink]="['signin']"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> SignIn</a></li>
+                      <li routerlinkActive="active" *ngIf="isLoggedIn()"><a [routerLink]="['logout']"><span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> LogOut</a></li>
                   </ul>
              </nav>
          </header>

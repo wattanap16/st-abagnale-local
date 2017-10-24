@@ -1,5 +1,5 @@
 
-import { Component} from "@angular/core";
+import { Component, OnInit} from "@angular/core";
 
 
 
@@ -15,7 +15,7 @@ import { Component} from "@angular/core";
             text-align: center;
         }
         .bg {
-            
+            background-image: url("/images/g1.jpg");
             background-position: center;
             background-repeat: no-repeat;
             background-color: pink;
@@ -23,10 +23,26 @@ import { Component} from "@angular/core";
             width: 100%;
            
         }
-        
+        img {
+            width: 100%;
+            height: 100%;
+        }
     `]
 })
-export class HomeComponent {
-   
+export class HomeComponent implements OnInit{
+    fullImagePath: string;
+    
+      constructor() {
+       
+        this.fullImagePath = ('/images/g1.jpg');
+      }
+    
+      ngOnInit() {
+      }
 
 }
+
+/*export class HomeComponent {
+    
+
+}*/

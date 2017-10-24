@@ -1,5 +1,6 @@
 body {
-  padding: 50px;
+  width:100%;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -25,3 +26,4 @@ a.danger {
 input.ng-invalid.ng-touched {
   border: 1px solid red;
 }
+
