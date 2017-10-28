@@ -7,6 +7,30 @@ import { Component, OnInit } from "@angular/core";
     selector: 'app-golfcourse',
     templateUrl: './golfcourse.component.html',
     styles: [`
+    /* ------ course paralax ---- */
+    .design-box {
+       position: relative;
+       height: 600px;
+       background-image: url('/images/golfcourse/a01.jpg');
+       background-repeat: no-repeat;
+       background-size: 100% 600px;
+       background-position: top center;
+       background-attachment: fixed;
+       overflow: hidden;
+   }
+   .mankind {
+       width: 1200px;
+       height: 450px;
+       background-image: url('/images/golfcourse/a03.jpg');
+       
+       background-repeat: no-repeat;
+       background-position: absolute;
+       opacity:0.5;
+       position: absolute;
+       margin-top:0px;
+   }
+       /* ------ course pics ---- */
+
     .container-fluid {
         width: 100%;
         height: auto;
@@ -77,7 +101,9 @@ import { Component, OnInit } from "@angular/core";
         -ms-transform: translate(-50%, -50%);
       }
     
-    
+      
+      
+
     `]
         
    
@@ -90,30 +116,31 @@ export class GolfcourseComponent implements OnInit{
 
       constructor() {
        
-        this.fullImagePath = [ [('/images/golfcourse/B01.jpg'),('fairy1')],
-                               [('/images/golfcourse/B02.jpg'),('fairy2')],
-                               [('/images/golfcourse/B03.jpg'),('fairy3')],
-                               [('/images/golfcourse/B04.jpg'),('fairy4')],
-                               [('/images/golfcourse/B05.jpg'),('fairy5')],
-                               [('/images/golfcourse/B06.jpg'),('fairy6')],
-                               [('/images/golfcourse/B07.jpg'),('fairy7')],
-                               [('/images/golfcourse/B08.jpg'),('fairy8')],
-                               [('/images/golfcourse/B09.jpg'),('fairy9')],
-                               [('/images/golfcourse/B10.jpg'),('fairy10')],
-                               [('/images/golfcourse/B11.jpg'),('fairy11')],
-                               [('/images/golfcourse/B12.jpg'),('fairy12')],
-                               [('/images/golfcourse/B13.jpg'),('fairy13')],
-                               [('/images/golfcourse/B14.jpg'),('fairy14')],
-                               [('/images/golfcourse/B15.jpg'),('fairy15')],
-                               [('/images/golfcourse/B16.jpg'),('fairy16')],
-                               [('/images/golfcourse/B17.jpg'),('fairy17')],
-                               [('/images/golfcourse/B18.jpg'),('fairy18')] ];
+        this.fullImagePath = [ [('/images/golfcourse/B01.jpg'),('Willie Auchterlonie')],
+                               [('/images/golfcourse/B02.jpg'),('Whinny Knowe')],
+                               [('/images/golfcourse/B03.jpg'),('The Skelp')],
+                               [('/images/golfcourse/B04.jpg'),('Crossgate')],
+                               [('/images/golfcourse/B05.jpg'),('Hackie Barra')],
+                               [('/images/golfcourse/B06.jpg'),('Playfair')],
+                               [('/images/golfcourse/B07.jpg'),('Ayton')],
+                               [('/images/golfcourse/B08.jpg'),('Eden Edge')],
+                               [('/images/golfcourse/B09.jpg'),('Windy Tap')],
+                               [('/images/golfcourse/B10.jpg'),('Spires')],
+                               [('/images/golfcourse/B11.jpg'),('Treble-One')],
+                               [('/images/golfcourse/B12.jpg'),('The Butts')],
+                               [('/images/golfcourse/B13.jpg'),('Hale Bopp')],
+                               [('/images/golfcourse/B14.jpg'),('Willie Whitelaw')],
+                               [('/images/golfcourse/B15.jpg'),('Steel Gem')],
+                               [('/images/golfcourse/B16.jpg'),('Freddie Tait')],
+                               [('/images/golfcourse/B17.jpg'),('Ladyhead')],
+                               [('/images/golfcourse/B18.jpg'),('Honeyman Howe')] ];
 
            
 
       }
     
       ngOnInit() {
+          
       }
     
       

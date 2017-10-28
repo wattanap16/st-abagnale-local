@@ -31,16 +31,17 @@ import { Component, OnInit} from "@angular/core";
         }
 
         .tree {
-            width: 100%;
-            height: 480px;
-           
+            width: 1520px;
+            height: 680px;
+            background-image: url('/images/homeparalax/t1.png');
             background-image-color: transparent;
             background-repeat: no-repeat;
             background-color: transparent;
-            background-position:  top left;
+            background-position:  top ;
             position: absolute;
-            margin-top:-300px;
-
+            margin-left: 550px;
+            margin-top:0px;
+            
         }
         
         .fan {
@@ -85,8 +86,8 @@ export class HomeComponent implements OnInit{
        
         this.fullImagePath = [('/images/homeparalax/fan1.png'),
                               ('/images/homeparalax/g1.jpg'),
-                              ('/images/homeparalax/golfer1.jpg'),
-                              ('/images/homeparalax/tree2.jpg')];
+                              ('/images/homeparalax/gf1.png'),
+                              ('/images/homeparalax/t1.png')];
       }
     
       ngOnInit() {
