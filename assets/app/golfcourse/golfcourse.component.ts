@@ -7,6 +7,69 @@ import { Component, OnInit } from "@angular/core";
     selector: 'app-golfcourse',
     templateUrl: './golfcourse.component.html',
     styles: [`
+
+        .showFGtext {
+            position: absolute;
+            top:20%;
+            width: 100%;
+            text-align: center;
+            color: #000000;
+            font-size: 27px;
+            font-family: "Lato", sans-serif;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+      }
+     
+     .showFGtext .showFGtextborder {
+         background-color: #111111;
+         color: whitesmoke;
+         padding: 10px;
+         opacity: 0.7;
+     }
+     
+     .showBGtext {
+         position: absolute;
+         top:70%;
+         width: 100%;
+         text-align: center;
+         color: #000000;
+         font-size: 27px;
+         font-family: "Lato", sans-serif;
+         letter-spacing: 8px;
+         text-transform: uppercase;
+     }
+     
+     .showBGtext .showBGtextborder {
+          background-color: #111111;
+          color: whitesmoke;
+          padding: 10px;
+          opacity: 0.5;
+      }
+     
+     .showBG {
+        position: relative;
+        height: 700px;
+        background-image: url('/images/golfcourse/a01.jpg');
+        opacity: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-attachment: fixed;
+        overflow: hidden; 
+     
+     }
+     
+     .showFG {
+        height: 350px;
+        background-image: url('/images/golfcourse/a03.jpg');
+        opacity: 1;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+     }
+     
+
+
     /* ------ course paralax ---- */
     .design-box {
        position: relative;

@@ -57,26 +57,86 @@ import { Component, OnInit} from "@angular/core";
             
         }
 
-        h1 {
-            color: transparent;
-            font-style:  italic;
-            font-size: 70px;
-            width: 100%;
-            text-align: center;
+
+
+
+        /* ---- large-window ----*/
+        
+         .large-window {
+             height: 300px;
+             margin-top: 20px;
+             border-radius: 50%;
+             background-image: url('/images/homeparalax/lgwindow.jpg');
+             background-position: center;
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+        
         }
-        .bg {
-            background-image: url("/images/g1.jpg");
-            background-position: center;
-            background-repeat: no-repeat;
-            background-color: pink;
-            height: 500px;
-            width: 100%;
-           
-        }
-        img {
-            width: 100%;
-            height: 100%;
-        }
+        
+      /* ------- tom-window ------ */
+
+      .showFGtext {
+        position: absolute;
+        top:20%;
+        width: 100%;
+        text-align: center;
+        color: #000000;
+        font-size: 27px;
+        font-family: "Lato", sans-serif;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+  }
+ 
+ .showFGtext .showFGtextborder {
+     background-color: #111111;
+     color: whitesmoke;
+     padding: 10px;
+     opacity: 0.7;
+ }
+ 
+ .showBGtext {
+     position: absolute;
+     top:70%;
+     width: 100%;
+     text-align: center;
+     color: #000000;
+     font-size: 27px;
+     font-family: "Lato", sans-serif;
+     letter-spacing: 8px;
+     text-transform: uppercase;
+ }
+ 
+ .showBGtext .showBGtextborder {
+      background-color: #111111;
+      color: whitesmoke;
+      padding: 10px;
+      opacity: 0.5;
+  }
+ 
+ .showBG {
+    position: relative;
+    height: 700px;
+    background-image: url('/images/homeparalax/newtom.jpg');
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden; 
+ 
+ }
+ 
+ .showFG {
+    height: 350px;
+    background-image: url('/images/homeparalax/oldtom.jpg');
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+ 
+
+
     `]
 })
 export class HomeComponent implements OnInit{
