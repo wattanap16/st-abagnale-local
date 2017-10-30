@@ -23,8 +23,8 @@ import { Component, OnInit } from "@angular/core";
      .showFGtext .showFGtextborder {
          background-color: #111111;
          color: whitesmoke;
-         padding: 10px;
-         opacity: 0.7;
+         padding: 5px;
+         opacity: 0.6;
      }
      
      .showBGtext {
@@ -42,8 +42,8 @@ import { Component, OnInit } from "@angular/core";
      .showBGtext .showBGtextborder {
           background-color: #111111;
           color: whitesmoke;
-          padding: 10px;
-          opacity: 0.5;
+          padding: 5px;
+          opacity: 0.6;
       }
      
      .showBG {

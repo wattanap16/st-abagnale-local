@@ -90,8 +90,8 @@ import { Component, OnInit} from "@angular/core";
  .showFGtext .showFGtextborder {
      background-color: #111111;
      color: whitesmoke;
-     padding: 10px;
-     opacity: 0.7;
+     padding: 5px;
+     opacity: 0.6;
  }
  
  .showBGtext {
@@ -109,8 +109,8 @@ import { Component, OnInit} from "@angular/core";
  .showBGtext .showBGtextborder {
       background-color: #111111;
       color: whitesmoke;
-      padding: 10px;
-      opacity: 0.5;
+      padding: 5px;
+      opacity: 0.6;
   }
  
  .showBG {
@@ -133,6 +133,28 @@ import { Component, OnInit} from "@angular/core";
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+ }
+
+ .showBG2 {
+    position: relative;
+    height: 700px;
+    background-image: url('/images/homeparalax/pga1.jpg');
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+    overflow: hidden; 
+ 
+ }
+ 
+ .showFG2 {
+    height: 350px;
+    background-image: url('/images/homeparalax/pga2.jpg');
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
  }
  
 

@@ -27,3 +27,17 @@ input.ng-invalid.ng-touched {
   border: 1px solid red;
 }
 
+
+
+
+.content article {
+    padding: 30px 5px 0 5px;
+    max-width: 700px;
+    margin: 0px auto;
+    text-align: center;
+}
+
+h1 {
+    color: #5D95E6;
+    font-weight: 300;
+}
