@@ -27,7 +27,7 @@ import { Component, OnInit} from "@angular/core";
             background-color: transparent;
             background-position: center;
             position: absolute;
-            margin-top: 240px;
+            margin-top: 300px;
         }
 
         .tree {
@@ -53,7 +53,7 @@ import { Component, OnInit} from "@angular/core";
             background-color: transparent;
             background-position: bottom ;
             position: absolute;
-            margin-top:350px;
+            margin-top:300px;
             
         }
 
